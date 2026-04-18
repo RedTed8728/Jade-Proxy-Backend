@@ -10,6 +10,6 @@ Jade is a proxy backend just like Ultraviolet or Scramjet, it is designed for by
 You can use Jade by installing it like any other backend. By incorporating it into your frontend.
 
 ### Why I made Jade
-I made Jade for myself, and others, I hate my schools restrictions and I know other do too. I made Jade so we can still have fun at school. (And so I can get a job as a jr IT helper) SHH
+I made Jade for myself, and others, I hate my schools restrictions and I know other do too. I made Jade so we can still have fun at school. (And so I can get a job as a jr IT helper) SHH!! 
 Jade can help multiple people be free and escape the stress of school. Its meant to let people have freedom.
 
