@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  jade:
+    build: .
+    container_name: jade-backend
+    restart: always
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      - PORT=8080
+      - JADE_KEY=${JADE_KEY}
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
+    networks:
+      - jade-net
+
+  nginx:
+    image: nginx:alpine
+    container_name: jade-nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - jade
+    networks:
+      - jade-net
+
+networks:
+  jade-net:
+    driver: bridge

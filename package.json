@@ -1,0 +1,14 @@
+{
+  "name": "jade",
+  "version": "2.0.0",
+  "description": "jade proxy backend",
+  "main": "src/jade-v2.js",
+  "scripts": {
+    "start": "node src/jade-v2.js",
+    "dev": "nodemon src/jade-v2.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
